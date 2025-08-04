@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ro‘yxatdan o‘tish</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="register-box">
+        <div class="register-top">
+            <h1>Yangi Hisob Yaratish</h1>
+            <p>Admin paneldan foydalanish uchun ro'yxatdan o'ting</p>
+        </div>
+
+        <form class="register-form" action="dashboard.html" method="GET">
+
+            <div class="form-line">
+                <label for="fullname">To‘liq ism</label>
+                <div class="form-input-wrap">
+                    <input type="text" id="fullname" name="fullname" placeholder="Ism Familiya" required>
+                    <i class="fas fa-user input-icon-left"></i>
+                </div>
+            </div>
+
+            <div class="form-line">
+                <label for="email">Email</label>
+                <div class="form-input-wrap">
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    <i class="fas fa-envelope input-icon-left"></i>
+                </div>
+            </div>
+
+            <div class="form-line">
+                <label for="username">Foydalanuvchi nomi</label>
+                <div class="form-input-wrap">
+                    <input type="text" id="username" name="username" placeholder="foydalanuvchi123" required>
+                    <i class="fas fa-user-tag input-icon-left"></i>
+                </div>
+            </div>
+
+            <div class="form-line">
+                <label for="password">Parol</label>
+                <div class="form-input-wrap">
+                    <input type="password" id="password" name="password" placeholder="Kamida 8 ta belgi" required>
+                    <i class="fas fa-lock input-icon-left"></i>
+                    <i class="fas fa-eye pass-toggle" id="togglePassword"></i>
+                </div>
+                <div class="pass-checker" id="passwordStrength"></div>
+            </div>
+
+            <div class="form-line">
+                <label for="confirm-password">Parolni tasdiqlash</label>
+                <div class="form-input-wrap">
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Parolni qayta kiriting" required>
+                    <i class="fas fa-lock input-icon-left"></i>
+                    <i class="fas fa-eye pass-toggle" id="toggleConfirmPassword"></i>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-register">Ro‘yhatdan o‘tish</button>
+
+            <div class="link-login">
+                Hisobingiz bormi? <a href="login.html">Tizimga kirish</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
